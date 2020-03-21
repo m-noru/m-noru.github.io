@@ -1,5 +1,5 @@
 $(function() {
 
-  $('h1').slideUp(1500);
+  $('h1').fadeOut(1500);
   
 });
