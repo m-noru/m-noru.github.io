@@ -1,3 +1,3 @@
 $(function(){
-  console.log('read jQuery File!');
+  $('#js-target').css('color', '#ff0000');
 });
