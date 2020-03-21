@@ -1,5 +1,5 @@
 $(function() {
 
-  $('h1').hide();
+  $('h1').slideUp(1500);
   
 });
