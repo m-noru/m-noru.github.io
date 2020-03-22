@@ -1,6 +1,6 @@
 .header{
   background-color:#3399FF;
-  height:70px;
+  height:90px;
 }
 
 .header-logo{
@@ -33,7 +33,7 @@ li{
 }
 
 .footer-list{
-  float:center;
+  float:right;
 }
 
 .footer-list li{
