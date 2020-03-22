@@ -10,7 +10,7 @@
 }
 
 li{
-  list:none;
+  list-style:none;
   float:left;
   padding:20px 40px 20px 40px;
 }
