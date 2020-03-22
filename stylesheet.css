@@ -5,14 +5,16 @@
 
 .header-logo{
   float:left;
-  font-size:35px;
-  padding:20px 40px 20px 40px;
+  font-size:36px;
+  padding:20px 40px;
 }
 
 .header-list li{
   list-style:none;
   float:left;
-  padding:20px 35px 20px 35px;
+  padding:20px 33px;
 }
 
-
+.footer{
+  height:270px;
+}
