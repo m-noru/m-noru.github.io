@@ -1,4 +1,4 @@
-.header{
+header{
   background-color:#3399FF;
   height:90px;
 }
@@ -42,7 +42,7 @@ li{
   float:left;
 }
 
-.footer{
+footer{
   height:120px;
   padding:40px;
 }
