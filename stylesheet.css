@@ -1,1 +1,15 @@
+.header{
+  background-color:#0000FF;
+  height:90px;
+}
+
+.header-logo{
+  float:left;
+}
+
+li{
+  list:none;
+  float:left
+}
+
 
