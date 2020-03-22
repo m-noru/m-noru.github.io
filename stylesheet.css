@@ -34,6 +34,14 @@ li{
   float:left;
 }
 
+.history{
+  height:500px;
+}
+
+.history-item{
+  float:left;
+}
+
 .footer{
   height:120px;
   padding:40px;
