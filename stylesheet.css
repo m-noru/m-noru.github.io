@@ -69,6 +69,7 @@ footer{
 
 .footer-list{
   float:right;
+  display:inline-block;
 }
 
 .footer-list li{
