@@ -13,7 +13,7 @@ li{
   list-style:none;
 }
 
-.header-list{
+.header-list li{
   float:left;
   padding:33px 20px;
   transition:all 0.5s;
