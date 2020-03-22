@@ -13,12 +13,12 @@ li{
   list-style:none;
 }
 
-.header-right li{
+.header-right{
   float:left;
   padding:33px 20px;
 }
 
-.header-right li:hover {
+.header-right:hover {
   background-color:rgba(255, 255, 255, 0.5);
 }
 
