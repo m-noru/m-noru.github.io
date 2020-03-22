@@ -22,6 +22,14 @@ li{
   padding:100px 80px;
 }
 
+.section-title{
+  border-bottom:2px solid #dee7ec;
+}
+
+.Reserch-item{
+  float:left;
+}
+
 .footer{
   height:120px;
   padding:40px;
