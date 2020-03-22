@@ -14,7 +14,7 @@ li{
 }
 
 .header-list li{
-  float:left;
+  display:inline-block;
   padding:33px 20px;
   transition:all 0.5s;
 }
