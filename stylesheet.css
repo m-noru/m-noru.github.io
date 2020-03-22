@@ -1,16 +1,18 @@
 .header{
-  background-color:#0000FF;
+  background-color:#3399FF;
   height:90px;
 }
 
 .header-logo{
   float:left;
   font-size:36px;
+  padding:20px 40px 20px 40px;
 }
 
 li{
   list:none;
-  float:left
+  float:left;
+  padding:20px 40px 20px 40px;
 }
 
 
