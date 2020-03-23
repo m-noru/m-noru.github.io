@@ -4,9 +4,12 @@ header{
 }
 
 .header-left{
+    text-align:left;
+}
+
+.header-logo{
   font-size:36px;
   padding:20px 40px;
-  text-align:left;
 }
 
 li{
