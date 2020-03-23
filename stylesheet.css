@@ -4,9 +4,12 @@ header{
 }
 
 .header-left{
-  text-align: center;
   font-size:36px;
   padding:20px 40px;
+}
+
+.header-right{
+  text-align: center;
 }
 
 li{
