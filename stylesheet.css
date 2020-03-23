@@ -9,14 +9,6 @@ header{
   text-align:left;
 }
 
-.header-logo{
-  display:inline-block;
-}
-
-.header-right{
-  text-align: center;
-}
-
 li{
   list-style:none;
 }
