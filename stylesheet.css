@@ -6,6 +6,11 @@ header{
 .header-left{
   font-size:36px;
   padding:20px 40px;
+  text-align:left;
+}
+
+.header-logo{
+  display:inline-block;
 }
 
 .header-right{
