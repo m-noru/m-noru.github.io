@@ -13,6 +13,10 @@ header{
   z-index:10;
 }
 
+h3{
+  font-size: 20px;
+}
+
 .header-left{
     float:left;
 }
@@ -128,6 +132,8 @@ header{
   letter-spacing:5px;
 }
 
+
+
 .container{
   width:100%;
   padding:0 15px;
@@ -137,22 +143,29 @@ header{
 
 .section-title{
   border-bottom:2px solid #dee7ec;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .research-wrapper {
-  height:500px;
-  padding-bottom:80px;
+  padding-top:65px;
 }
 
 
 .publications-wrapper {
-  height:500px;
-  padding-bottom:80px;
+  padding-top:65px;
 }
 
+.papers li{
+  padding:15px;
+}
+
+.proceedings li{
+  padding:15px;
+}
+
+
 .history-wrapper {
-  padding-bottom:80px;
+  padding-top: 65px;
 }
 
 .item{
@@ -185,4 +198,6 @@ footer{
 .footer-list a{
   padding-bottom:20px;
   display:block;
+  color:black;
+  text-decoration: none;
 }
