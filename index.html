@@ -8,68 +8,111 @@
   <!-- jQueryの読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
-  
+
 <body>
   <header>
     <div class="container">
+
       <div class="header-left">
-        <div class="header-logo">
-          m-noru
-        </div>
-        <div class="header-list">
-          <ul>
-            <li>Research</li>
-            <li>Publications</li>
-            <li>Contact me</li>
-          </ul>
-        </div>
+        <div class="header-logo"><a href="#">m-noru</a></div>
+      </div>
+
+      <div class="smartphone-menu">
+      <a class="menu-icon"><span><i class="fas fa-bars"></i></span></a>
+      </div>
+      <nav class="menu-container">
+        <ul class="menu">
+          <li class="menu-item"><a href="#research">Research</a></li>
+          <li class="menu-item"><a href="#publications">Publications</a></li>
+          <li class="menu-item"><a href="#history">Educational Background</a></li>
+          <li class="menu-item"><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#history">Educational Background</a>
+        <a href="#contact">Contact me</a>
       </div>
     </div>
+
   </header>
-  
-  <div class="top-wrapper">
+
+  <div class="top-wrapper" id="top">
     <div class="container">
       <h1>Hello, World</h1>
-      <h1>Hello, World</h1>
-      <h1>Hello, World</h1>
-      <h1>Hello, World</h1>
-      <h1>Hello, World</h1>
     </div>
-    
-    <div class="research">
-      <h3 class="section-title">Reserch</h2>
-      <div class="research-item">
-        <p>Non-destructive Testing and Evaluation</p>
-      </div>
-    </div>
-    
-    <div class="publications">
-    </div>
-    
-    <div class="hisory">
-      <h3 class="section-title">History</h2>
-      <div class="history-item">
-        <p>I'm studying for a PhD at Okayama university</p>
-      </div>
-    </div>
-    
-    
   </div>
-  
+
+  <div class="research-wrapper" id="research">
+    <div class="container">
+      <h3 class="section-title">Reserch</h3>
+      <div class="research-item">
+        <h3>Non-destructive Testing and Evaluation</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="publications-wrapper" id="publications">
+    <div class="container">
+      <h3 class="section-title">Publications</h3>
+    </div>
+  </div>
+
+  <div class="history-wrapper" id="history">
+    <div class="container">
+      <h3 class="section-title">Educational Background</h3>
+      <div class="history-item">
+
+        <div class="item">
+          <h3>2019-</h3>
+          <h4>Doctoral Program</h4>
+          <img src="./comu_syimbol.jpg" alt="">
+          <h5>Graguate School of Interdisciplinary Science and Engineering in Health Systems</h4>
+        </div>
+
+        <div class="line">
+          <div class="h_line"></div>
+          <div class="v_line"></div>
+          <div class="h_line"></div>
+        </div>
+
+        <div class="item">
+          <h3>2019</h3>
+          <h4>Master of Science</h4>
+          <img src="./comu_syimbol.jpg" alt="">
+          <h5>Graguate School of Interdisciplinary Science and Engineering in Health Systems</h4>
+        </div>
+
+        <div class="line">
+          <div class="h_line"></div>
+          <div class="v_line"></div>
+          <div class="h_line"></div>
+        </div>
+
+        <div class="item">
+          <h3>2018</h3>
+          <h4>Bachelor of Engineering</h4>
+          <img src="./comu_syimbol.jpg" alt="">
+          <h5>Department of Electrical and Communication Engineering, Faculty of Engineering</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <div class="footer-logo">
-      m-noru
+    <div class="container">
+      <div class="footer-list" id="contact">
+        <a><i class="fas fa-envelope-square"></i> E-mail</a>
+        <a><i class="fas fa-flask"></i> Advanced Electro Measurement Lab.</a>
+        <a><i class="fas fa-university"></i> Okayama University</a>
+      </div>
     </div>
-    
-    <div class="footer-list">
-      <ul>
-        <li><i class="fas fa-envelope-square"></i> E-mail</li>
-        <li><i class="fas fa-flask"></i> Advanced Electro Measurement Lab.</li>
-        <li><i class="fas fa-university"></i> Okayama University</li>
-      </ul>
-    </div>
+
   </footer>
-  
+
   <!-- script.jsの読み込み -->
   <script src="./script.js"></script>
 </body>
