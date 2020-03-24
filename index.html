@@ -1,141 +1,203 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>This is for my learning how to use github.</title>
-  <link rel="stylesheet" type="text/css" href="./stylesheet.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <!-- jQueryの読み込み -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-</head>
+*{
+  box-sizing:border-box;
+}
 
-<body>
-  <header>
-    <div class="container">
+header{
+  background-color:rgba(51, 153, 255, 0.9);
+  height:65px;
+  width: 100%;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  z-index:10;
+}
 
-      <div class="header-left">
-        <div class="header-logo"><a href="#">m-noru</a></div>
-      </div>
+h3{
+  font-size: 20px;
+}
 
-      <div class="smartphone-menu">
-      <a class="menu-icon"><span><i class="fas fa-bars"></i></span></a>
-      </div>
-      <nav class="menu-container">
-        <ul class="menu">
-          <li class="menu-item"><a href="#research">Research</a></li>
-          <li class="menu-item"><a href="#publications">Publications</a></li>
-          <li class="menu-item"><a href="#history">Educational Background</a></li>
-          <li class="menu-item"><a href="#contact">Contact me</a></li>
-        </ul>
-      </nav>
+.header-left{
+    float:left;
+}
 
-      <div class="header-right">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#history">Educational Background</a>
-        <a href="#contact">Contact me</a>
-      </div>
-    </div>
+.header-right {
+  float: right;
+  margin-right: 25px;
+}
 
-  </header>
+.header-right a {
+  color:black;
+  text-decoration: none;
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
 
-  <div class="top-wrapper" id="top">
-    <div class="container">
-      <h1>I am Hayashi, Minoru</h1>
-    </div>
-  </div>
+.header-right a:hover {
+  background-color:rgba(255, 255, 255, 0.5);
+}
 
-  <div class="research-wrapper" id="research">
-    <div class="container">
-      <h3 class="section-title">Reserch</h3>
-      <div class="research-item">
-        <h3>Non-destructive Testing and Evaluation</h3>
-        <p>Non-destructive testing is an analysis technique used to evaluate health of the infrastructures without causing damage.</p>
-        <p>We, our research group, have been developing new ultra-sensitive non-destructive testing methods making use of magnetic field.</p>
-        <p></p>
-      </div>
-    </div>
-  </div>
+.header-logo{
+  display:inline-block;
+  font-size:30px;
+  padding:15px 40px;
+}
 
-  <div class="publications-wrapper" id="publications">
-    <div class="container">
-      <h3 class="section-title">Publications</h3>
-      <h3>Papers</h3>
-      <div class="papers">
-        <ol>
-          <li>M. Hayashi, T. Saito, Y. Nakamura, K. Sakai, T. Kiwa, I. Tanikura, K. Tsukada,<br>"Extraction Method of Crack Signal for Inspection of Complicated Steel Structures Using A Dual-Channel Magnetic Sensor,"<br>Sensors 19 (13), 3001</li>
-          <li>K. Tsukada, M. Hayashi, Y. Nakamura, K. Sakai, T. Kiwa,<br>"Small eddy current testing sensor probe using a tunneling magnetoresistance sensor to detect cracks in steel structures,"<br>IEEE Transactions on Magnetics 54 (11), 1-5</li>
-        </ol>
-      </div>
-      <h3>Proceedings</h3>
-      <div class="proceedings">
-        <ol>
-          <li>M. Hayashi, Y. Nakamura, K. Sakai, T. Kiwa, K. Tsukada,<br>"Detection method using a dual-channel magnetic sensor for steel cracks in complicated structures,"<br>Proceedings of the 7th Asia-Pacific Workshop on Structural Health Monitoring (APWSHM-2018), Hong Kong, China</li>
-          <li>K. Tsukada, Y. Majima, Y. Nakamura, M. Hayashi, K. Sakai, T. Kiwa, T. Sakashita, M. Seki, T. Furukawa<br>"Nondestructive evaluation of defects in welded sections of rails via unsaturated AC magnetic flux leakage measurements with a gradiometer,"<br>Proceedings of the 12th European Conference on Non-Destructive Testing (ECNDT-2018), Gothenburg, Sweden</li>
-          <li>K. Tsukada, S. Wakabayashi, M. Hayashi, T. Saitoh, T. tomioka, K. Sakai, T. Kiwa, Y. Fujino<br>"Magnetic measurement of corrosion in a steel structure using extremely low-frequency eddy current testing without surface treatment,"<br>Proceedings of the 5th International Conference on Smart Monitoring, Assessment and Rehabilitation of Civil Structures (SMAR-2019), Postdam, Germany</li>
-        </ol>
+.header-logo a{
+  color:black;
+  text-decoration: none;
+}
 
-      </div>
+.menu-icon {
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display:none;
+}
+
+.menu-container {
+  margin-top: 0;
+  position: relative;
+}
+
+.menu-container .menu {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 65px;
+  padding: 0;
+  display:none;
+}
+
+.menu-container .menu .menu-item {
+  flex: 1;
+}
+
+.menu-container .menu .menu-item a {
+  background-color:rgba(51, 153, 255, 0.9);
+  border-right: 1px solid #ccc;
+  color: #333;
+  display: block;
+  padding: 0.6em 0.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-container .menu .menu-item a:hover {
+  background: #ccc;
+  color: #ffffff;
+}
+
+.menu-container .menu .menu-item:last-child a {
+  border-right: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header-right{
+    display:none;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+  .menu-container .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+  .menu-container .menu .menu-item a {
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+  }
+  .menu-container .menu .menu-item:last-child a {
+    border-bottom: none;
+  }
+}
 
 
-      <h4><a href="https://scholar.google.com/citations?hl=ja&user=eps_fAwAAAAJ">Google Scholar</a></h4>
-    </div>
-  </div>
+.top-wrapper{
+  padding:180px 0 100px 0;
+  background-size:cover;
+  text-align:center;
+}
 
-  <div class="history-wrapper" id="history">
-    <div class="container">
-      <h3 class="section-title">Educational Background</h3>
-      <div class="history-item">
+.top-wrapper h1{
+  font-size:45px;
+  letter-spacing:5px;
+}
 
-        <div class="item">
-          <h3>2019 -</h3>
-          <h4>Doctoral Program</h4>
-          <img src="https://raw.githubusercontent.com/m-noru/m-noru.github.io/master/comu_syimbol.jpg" alt="">
-          <h5>Graguate School of Interdisciplinary Science and Engineering in Health Systems</h4>
-        </div>
 
-        <div class="line">
-          <div class="h_line"></div>
-          <div class="v_line"></div>
-          <div class="h_line"></div>
-        </div>
 
-        <div class="item">
-          <h3>2019</h3>
-          <h4>Master of Science</h4>
-          <img src="https://raw.githubusercontent.com/m-noru/m-noru.github.io/master/comu_syimbol.jpg" alt="">
-          <h5>Graguate School of Interdisciplinary Science and Engineering in Health Systems</h4>
-        </div>
+.container{
+  width:100%;
+  padding:0 15px;
+  margin:0 auto;
+  text-align: center;
+}
 
-        <div class="line">
-          <div class="h_line"></div>
-          <div class="v_line"></div>
-          <div class="h_line"></div>
-        </div>
+.section-title{
+  border-bottom:2px solid #dee7ec;
+  padding-bottom: 10px;
+}
 
-        <div class="item">
-          <h3>2018</h3>
-          <h4>Bachelor of Engineering</h4>
-          <img src="https://raw.githubusercontent.com/m-noru/m-noru.github.io/master/comu_syimbol.jpg" alt="">
-          <h5>Department of Electrical and Communication Engineering, Faculty of Engineering</h4>
-        </div>
+.research-wrapper {
+  padding-top:65px;
+}
 
-      </div>
-    </div>
-  </div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-list" id="contact">
-        <a href="mailto:px3921b8(at)s.okayama-u.ac.jp"><i class="fas fa-envelope-square"></i> E-mail</a>
-        <a href="https://www.ec.okayama-u.ac.jp/~sense/index.html" target="_blank"><i class="fas fa-flask"></i> Advanced Electro Measurement Lab.</a>
-        <a href="https://www.okayama-u.ac.jp" target="_blank"><i class="fas fa-university"></i> Okayama University</a>
-      </div>
-    </div>
+.publications-wrapper {
+  padding-top:65px;
+}
 
-  </footer>
+.papers li{
+  padding:15px;
+}
 
-  <!-- script.jsの読み込み -->
-  <script src="./script.js"></script>
-</body>
-</html>
+.proceedings li{
+  padding:15px;
+}
+
+
+.history-wrapper {
+  padding-top: 65px;
+}
+
+.item{
+  margin:50px;
+}
+
+.v_line {
+  margin:auto;
+  display:block;
+  width: 5px;
+  height: 150px;
+  background-color:#0099FF;
+}
+
+.h_line {
+  margin:auto;
+  display:block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color:#0099FF;
+}
+
+footer{
+  height:180px;
+  padding:40px;
+  background-color:#0099FF;
+}
+
+.footer-list a{
+  padding-bottom:20px;
+  display:block;
+  color:black;
+  text-decoration: none;
+}
