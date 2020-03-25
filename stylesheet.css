@@ -172,6 +172,17 @@ h3{
   margin:50px;
 }
 
+.fadeIn {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.fadeIn.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .v_line {
   margin:auto;
   display:block;
