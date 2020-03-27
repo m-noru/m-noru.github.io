@@ -19,4 +19,14 @@ $(window).scroll(function (){
 
 $(function(){
   $('#prof').fadeIn(2500);
+  $('#prof').jrumble({
+    x:10,
+    y:10,
+    rotation:4
+  });
+  $('#prof').hover(function(){
+  	$(this).trigger('startRumble');
+  }, function(){
+  	$(this).trigger('stopRumble');
+  });
 });
