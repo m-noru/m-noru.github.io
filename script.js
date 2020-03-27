@@ -16,3 +16,7 @@ $(window).scroll(function (){
            }
        });
    });
+
+$(function(){
+  $('#prof').fadeIn(2500);
+});
