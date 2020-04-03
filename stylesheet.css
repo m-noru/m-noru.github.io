@@ -19,6 +19,7 @@ h3{
 
 .header-left{
     float:left;
+    position:fixed;
 }
 
 .header-right {
