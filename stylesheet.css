@@ -215,13 +215,16 @@ h3{
 
 footer{
   height:180px;
-  padding:40px;
+  padding:30px;
   background-color:#0099FF;
 }
 
-.footer-list a{
+.footer-list li{
+  list-style: none;
   padding-bottom:20px;
-  display:block;
+}
+
+.footer-list a{
   color:black;
   text-decoration: none;
 }
