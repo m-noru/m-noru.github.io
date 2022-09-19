@@ -183,6 +183,10 @@ h3{
 }
 
 .item img{
+  width:300px;
+}
+
+.item_ti img{
   height:150px;
 }
 
